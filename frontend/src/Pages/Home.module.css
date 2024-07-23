@@ -1,0 +1,12 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.files {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 10px;
+    padding: 1rem;
+}

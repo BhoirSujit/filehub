@@ -1,0 +1,149 @@
+.header {
+  padding: 1rem;
+  background-color: white;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  flex-grow: 1;
+}
+
+.middle {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.logo span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: tomato;
+}
+
+.search_form {
+  width: 100%;
+}
+
+.search_form input {
+  background-color: #f2f2f2;
+  padding: 0.8rem 2rem;
+  border-style: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.search_form input:focus {
+  outline-style: none;
+}
+
+.uploadbtn {
+  margin-right: 1rem;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid tomato;
+  color: white;
+}
+
+.uploadbtn:hover {
+  border: 1px solid tomato;
+  background-color: white;
+  color: black;
+}
+
+.uploadmodel {
+    display: none;
+  z-index: 10;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.09);
+}
+
+.uploadmodel form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  
+}
+
+.uploadmodel form input[type="file"] {
+  color: tomato;
+}
+
+::-webkit-file-upload-button {
+
+  display: none;
+}
+
+.uploadlabel {
+  background-color: #ff6347;
+  color: white;
+  border: 1px solid tomato;
+  border-radius: 10px;
+  padding: 0.4rem 2rem;
+    display: none;
+}
+
+.progressbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    height: 10px;
+    margin: 1rem;
+    border-radius: 5px;
+   display: none;
+}
+
+.progressbar::after {
+    content: ''; 
+    height: inherit;
+    position: absolute;
+    width: calc();
+    background-color: tomato;
+    opacity: 50%;
+    border-radius: 5px ;
+    top: 0;
+    left: 0;
+    animation: progressbareffect 1s infinite ease-in-out;
+}
+
+.progress {
+    background-color: tomato;
+    height: 10px;
+    
+    border-radius: 5px;
+}
+
+@keyframes progressbareffect {
+    0% { width: 0%;}
+    100% {width: 100%}
+    
+}
+
+@media (max-width: 480px) {
+
+    .middle {
+        display: none;
+    }
+}
