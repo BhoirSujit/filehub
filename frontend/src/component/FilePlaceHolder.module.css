@@ -1,0 +1,84 @@
+.box {
+    background-color: white;
+    border-radius: 10px;
+   
+    
+    
+}
+
+
+
+.img {
+    height: 250px
+}
+
+.img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ 
+}
+
+.details {
+   
+    margin: 1rem;
+    height: 100%;
+    display: flex;
+ 
+}
+
+.filedetails {
+    width: 90%;
+   
+}
+
+.fileoption {
+    width: 10%;
+    text-align: right;
+    position: relative;
+    
+}
+
+.optionmodel {
+    position: absolute;
+    
+    right: 0%;
+    text-align: left;
+    background-color: white;
+    display: none;
+    
+    border-radius: 10px;
+    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.194);
+}
+
+
+
+.btnoptionmodel {
+    border: none;
+    background-color: transparent;
+    cursor:context-menu;
+}
+
+.optionholder {
+    padding: 0.4rem;
+    
+}
+
+.optionholder:hover {
+    background-color: rgb(255, 228, 228);
+    border-radius: 10px;
+}
+
+.name {
+    
+    display: block;
+    text-wrap:stable;
+    overflow:hidden;
+}
+
+.size {
+    display: block;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
