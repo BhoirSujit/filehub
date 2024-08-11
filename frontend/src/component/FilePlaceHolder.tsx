@@ -44,7 +44,7 @@ export default function FilePlaceHolder(props: propsType) {
     }
 
     const downloadfile = (file: string) => {
-        FileSaver.saveAs('http://192.168.1.8:3050/files/'+file, file);
+        FileSaver.saveAs('http://192.168.1.10:3050/files/'+file, file);
 
     }
   return (
@@ -54,7 +54,7 @@ export default function FilePlaceHolder(props: propsType) {
           <img
             src={
               props.file.thumbnail != "none"
-                ? "http://192.168.1.8:3050/files/thumb/" + props.file.thumbnail
+                ? "http://192.168.1.10:3050/files/thumb/" + props.file.thumbnail
                 : placeholderimg
             }
             alt="abc"
